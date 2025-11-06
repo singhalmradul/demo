@@ -1,0 +1,9 @@
+spring:
+
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://database-1.cbytkarhbgjq.us-east-1.rds.amazonaws.com/autotest
+
+  jpa:
+    generate-ddl: true

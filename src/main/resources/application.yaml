@@ -1,0 +1,19 @@
+spring:
+
+  application:
+    name: demo
+
+
+  config:
+    import:
+    - optional:file:.env[.properties]
+
+  jpa:
+    database: postgresql
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+templates:
+  location: classpath:/templates/
