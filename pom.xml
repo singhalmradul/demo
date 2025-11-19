@@ -9,7 +9,7 @@
     <version>3.5.5</version>
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
-  <groupId>com.microstrategy</groupId>
+  <groupId>io.github.singhalmradul</groupId>
   <artifactId>sylvie</artifactId>
   <version>0.1.0</version>
   <name>sylvie</name>
@@ -29,8 +29,8 @@
   </scm>
   <properties>
     <encoding>UTF-8</encoding>
-    <java.version>21</java.version>
-    <scala.version>3.7.1</scala.version>
+    <java.version>17</java.version>
+    <scala.version>3.3.7</scala.version>
     <scala.compat.version>3.2.19</scala.compat.version>
     <spec2.version>5.6.4</spec2.version>
   </properties>
@@ -142,8 +142,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>21</source>
-          <target>21</target>
+          <source>17</source>
+          <target>17</target>
           <compilerArgs>
             <arg>-Xplugin:semanticdb -sourceroot:${project.basedir}
               -targetroot:${project.build.outputDirectory}</arg>
@@ -198,8 +198,11 @@
             </goals>
             <configuration>
               <args>
-                <arg>-dependencyfile</arg>
-                <arg>${project.build.directory}/.scala_dependencies</arg>
+                <arg>-source:future</arg>
+                <arg>-deprecation</arg>
+                <arg>-feature</arg>
+                <arg>-Wunused:all</arg>
+                <arg>-Wvalue-discard</arg>
               </args>
             </configuration>
           </execution>

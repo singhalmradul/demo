@@ -11,7 +11,7 @@ import jakarta.persistence.OneToMany
 
 import scala.compiletime.uninitialized
 
-import com.microstrategy.sylvie.model.enumerations.ProgrammingLanguage
+import io.github.singhalmradul.sylvie.model.enumerations.ProgrammingLanguage
 
 @Entity
 class TestTemplate extends IdentifiableEntity:

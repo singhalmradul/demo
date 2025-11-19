@@ -7,7 +7,7 @@ import jakarta.persistence.ManyToOne
 
 import scala.compiletime.uninitialized
 
-import com.microstrategy.sylvie.model.enumerations.ProgrammingLanguage
+import io.github.singhalmradul.sylvie.model.enumerations.ProgrammingLanguage
 
 @Entity
 class TestStep extends IdentifiableEntity:

@@ -1,6 +1,6 @@
 package io.github.singhalmradul.sylvie.services.implementations
 
-import com.microstrategy.sylvie.services.TemplateBootstrapService
+import io.github.singhalmradul.sylvie.services.TemplateBootstrapService
 
 import com.typesafe.scalalogging.Logger
 

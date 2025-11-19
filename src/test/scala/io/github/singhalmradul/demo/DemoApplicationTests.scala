@@ -1,4 +1,4 @@
-package com.microstrategy.demo;
+package io.github.singhalmradul.demo;
 
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.ActiveProfiles

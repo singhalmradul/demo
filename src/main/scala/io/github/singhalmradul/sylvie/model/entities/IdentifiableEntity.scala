@@ -14,4 +14,4 @@ abstract class IdentifiableEntity:
 
   @Id
   @GeneratedValue(strategy = IDENTITY)
-  var id: Long = uninitialized
+  var id: UUID = uninitialized
