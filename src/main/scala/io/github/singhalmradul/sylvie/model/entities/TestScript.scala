@@ -11,7 +11,4 @@ import jakarta.persistence.ManyToMany
 import scala.compiletime.uninitialized
 
 @Entity
-class TestCase extends IdentifiableEntity:
-
-  @ManyToMany
-  var testSteps: JList[TestStep] = ArrayList[TestStep]()
+class TestScript extends IdentifiableEntity

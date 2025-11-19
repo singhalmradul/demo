@@ -1,8 +1,7 @@
 package io.github.singhalmradul.sylvie.services.implementations
 
-import io.github.singhalmradul.sylvie.services.TemplateBootstrapService
-
 import com.typesafe.scalalogging.Logger
+import io.github.singhalmradul.sylvie.services.TemplateBootstrapService
 
 class LocalStorageTemplateBootstrapService extends TemplateBootstrapService:
 

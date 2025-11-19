@@ -12,6 +12,6 @@ import scala.compiletime.uninitialized
 @Entity
 class TestPlan extends IdentifiableEntity:
 
-  @ManyToMany
+  @ManyToMany(targetEntity = classOf[TestSuite])
   @JoinTable
   var testSuites: JList[TestSuite] = ArrayList[TestSuite]()

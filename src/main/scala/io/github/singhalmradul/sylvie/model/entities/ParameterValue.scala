@@ -6,7 +6,7 @@ import jakarta.persistence.ManyToOne
 import scala.compiletime.uninitialized
 
 @Entity
-class ParameterValue:
+class ParameterValue extends IdentifiableEntity:
 
   @ManyToOne
   var parameter: TestParameter = uninitialized

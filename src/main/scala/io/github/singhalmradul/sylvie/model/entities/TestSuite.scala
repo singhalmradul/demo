@@ -10,5 +10,5 @@ import jakarta.persistence.ManyToMany
 @Entity
 class TestSuite extends IdentifiableEntity:
 
-  @ManyToMany
-  var testCases: JList[TestCase] = ArrayList[TestCase]()
+  @ManyToMany(targetEntity = classOf[TestScript])
+  var testCases: JList[TestScript] = ArrayList[TestScript]()

@@ -23,6 +23,3 @@ class TestTemplate extends IdentifiableEntity:
   var location: String = uninitialized
 
   var dynamicFileLocation: String = uninitialized
-
-  @OneToMany
-  var testSteps: JList[TestStep] = ArrayList[TestStep]()
