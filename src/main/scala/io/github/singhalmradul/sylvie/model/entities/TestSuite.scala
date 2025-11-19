@@ -8,7 +8,7 @@ import jakarta.persistence.JoinTable
 import jakarta.persistence.ManyToMany
 
 @Entity
-class TestSuite extends IdentifiableEntity:
+class TestSuite extends IdentifiableEntity, Executable:
 
   @ManyToMany(targetEntity = classOf[TestScript])
   var testCases: JList[TestScript] = ArrayList[TestScript]()

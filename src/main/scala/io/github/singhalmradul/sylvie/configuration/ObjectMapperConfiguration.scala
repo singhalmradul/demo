@@ -8,7 +8,7 @@ import com.fasterxml.jackson.module.scala.DefaultScalaModule
 @Configuration
 class ObjectMapperConfiguration:
 
-  def objectMapper() =
+  def objectMapper(): ObjectMapper =
     val objectMapper = ObjectMapper()
 
     objectMapper.registerModule(DefaultScalaModule)

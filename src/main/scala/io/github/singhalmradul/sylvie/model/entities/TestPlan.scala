@@ -10,7 +10,7 @@ import jakarta.persistence.ManyToMany
 import scala.compiletime.uninitialized
 
 @Entity
-class TestPlan extends IdentifiableEntity:
+class TestPlan extends IdentifiableEntity, Executable:
 
   @ManyToMany(targetEntity = classOf[TestSuite])
   @JoinTable

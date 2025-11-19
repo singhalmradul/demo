@@ -8,5 +8,5 @@ import io.github.singhalmradul.sylvie.repositories.TestScriptRepository
 import io.github.singhalmradul.sylvie.services.TestScriptService
 
 @Service
-class TestCaseServiceImpl(
+class TestScriptServiceImpl(
     testScriptRepository: TestScriptRepository) extends TestScriptService

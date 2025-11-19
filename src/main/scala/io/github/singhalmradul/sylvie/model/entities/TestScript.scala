@@ -11,4 +11,4 @@ import jakarta.persistence.ManyToMany
 import scala.compiletime.uninitialized
 
 @Entity
-class TestScript extends IdentifiableEntity
+class TestScript extends IdentifiableEntity, Executable
